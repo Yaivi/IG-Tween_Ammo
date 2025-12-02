@@ -5,8 +5,10 @@ Escena 3D interactiva de Three.js animada por Tween.js y con físicas de Ammo.js
 
 
 ## Controles
+Para realizar disparos se debe pulsar el botón izquierdo del ratón, se debe hacer un click rápido, sostener el botón no resultará en el disparo de una flecha.
 
 ## Cámara
+Para mover la cámara se hace uso de ambos botones del ratón, el izquierdo al mantenerlo presionado y mover el ratón, rota la cámara en la dirección opuesta en la que se mueva el ratón, y el botón derecho sirve para mover la posición de la cámara en el eje X e Y. Para hacer y deshacer zoom se usa la rueda del ratón.
 
 ## Modelos y Físicas
 ### Proyectil
