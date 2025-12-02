@@ -31,5 +31,5 @@ Escena 3D interactiva de Three.js animada por Tween.js y con físicas de Ammo.js
 ## Bibliografía
 * Manual de Usuario de Bullet de Ammo.js: https://github.com/kripken/ammo.js/blob/main/bullet/Bullet_User_Manual.pdf
 * Tutoriales introductorios a Ammo.js:
-** Tutorial sobre poner Rigid Bodies: https://medium.com/%40bluemagnificent/intro-to-javascript-3d-physics-using-ammo-js-and-three-js-dd48df81f591
-** Tutorial sobre colisiones: https://medium.com/@bluemagnificent/collision-detection-in-javascript-3d-physics-using-ammo-js-and-three-js-31a5569291ef
+  * Tutorial sobre poner Rigid Bodies: https://medium.com/%40bluemagnificent/intro-to-javascript-3d-physics-using-ammo-js-and-three-js-dd48df81f591
+  * Tutorial sobre colisiones: https://medium.com/@bluemagnificent/collision-detection-in-javascript-3d-physics-using-ammo-js-and-three-js-31a5569291ef
