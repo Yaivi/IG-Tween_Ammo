@@ -12,20 +12,18 @@ Para mover la cámara se hace uso de ambos botones del ratón, el izquierdo al m
 
 ## Modelos y Físicas
 ### Proyectil
+La parte principal de este proyecto, el proyectil consiste en un objeto *rigidBody* que tiene forma de **flecha**. El modelo en su conjunto esta formado por 5 partes diferentes, la punta, el palo, las plumas, el grupo que contiene todo en su conjunto y el rigidBody que se le aplica al grupo para que la caja de colisiones sea lo más parecida al modelo. 
+
+* Punta:
+* Palo: esta parte del modelo esta creada a partir de *Bones*, con el objetivo de animar el modelo cuando la flecha se encuentre en movimiento. Cada uno de los huesos se crea y se conecta al anterior para luego crear el *Skeleton* del conjunto, añadirle el Mesh de cilindro y para acabar llamar a las funciones que crean la punta y las plumas para colocarlas en los Bones correspondientes
+* Plumas:
+* Grupo:
+* RigidBody:
+
 
 ### Diana
 
-### Armadura
-
-### Fuego
-
 ### Muro
-
-### Saco
-
-### Cuerda
-
-### Tela
 
 
 ## Galería
