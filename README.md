@@ -6,7 +6,6 @@ Escena 3D interactiva de Three.js animada por Tween.js y con físicas de Ammo.js
 **ENLACE A LA SIMULACIÓN**: https://f6rr86.csb.app/
 
 ## Índice
-- [IG-Tween_Ammo](#ig-tween_ammo)
 - [Controles](#controles)
 - [Cámara](#cámara)
 - [Modelos y Físicas](#modelos-y-físicas)
