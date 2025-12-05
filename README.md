@@ -2,6 +2,7 @@
 Escena 3D interactiva de Three.js animada por Tween.js y con físicas de Ammo.js, esta consiste en una serie de objetos, creados con diferentes materiales y físicas, a los que disparar unas flechas que han sido creadas aplicando los conocimientos adquiridos de Tween.js y Ammo.j. Funciona con el control de la cámara y al hacer click se genera el objeto de la flecha, que mientras se encuentre en movimiento por el aire, se pierde el control la cámara activando un efecto de slow motion para poder apreciar mejor la creación del objeto.
 
 **ENLACE AL CÓDIGO**: https://codesandbox.io/p/sandbox/ig2526-s10-forked-f6rr86
+
 **ENLACE A LA SIMULACIÓN**: https://f6rr86.csb.app/
 
 ## Índice
