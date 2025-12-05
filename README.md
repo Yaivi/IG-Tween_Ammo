@@ -6,7 +6,17 @@ Escena 3D interactiva de Three.js animada por Tween.js y con físicas de Ammo.js
 **ENLACE A LA SIMULACIÓN**: https://f6rr86.csb.app/
 
 ## Índice
-
+- [IG-Tween_Ammo](#ig-tween_ammo)
+- [Controles](#controles)
+- [Cámara](#cámara)
+- [Modelos y Físicas](#modelos-y-físicas)
+  - [Proyectil](#proyectil)
+  - [Diana](#diana)
+  - [Muro](#muro)
+- [Físicas](#físicas)
+- [Animación](#animación)
+- [Galería](#galería)
+- [Bibliografía](#bibliografía)
 
 ## Controles
 Para realizar disparos se debe pulsar el botón izquierdo del ratón, se debe hacer un click rápido, sostener el botón no resultará en el disparo de una flecha. Arriba a la derecha se encuentran algunos sliders que controlan la distancia de la cámara con respecto a las dianas, la velocidad de lanzamiento de la flecha, la fuerza de un efecto de slowMotion que se le aplica a las físicas de la simulación y la opción de activar y desactivar este efecto.
@@ -109,7 +119,7 @@ Como se puede ver por los comentarios del código de la función, esta desactiva
 
 ## Animación
 Para la animación se han creado 2 formas de realizar el mismo movimiento, uno usando TWEENS y otro a través de senos,  curva ndo la flecha, simulando como ocurre con estas al ser lanzadas en la vida real (vídeo de ejemplo). En ambos casos el movimiento es el mismo un bamboleo del palo, que se acentua en el centro de este, y el movimiento de las plumas de la flecha.
-
+![Gif de la Tierra](https://raw.githubusercontent.com/Yaivi/IG-Tween_Ammo/main/IG_TWEEN_ANIM.gif.gif)
 Para la versión de **TWEENS**, primero localiza el SkinnedMesh y prepara un estado interno que representa una fase que avanza de 0 a 2π cada 2 segundos. Este estado se anima mediante un tween infinito y, en cada actualización, se usa esa fase para mover los huesos de la flecha, causando la flexión que es mayor en los centrales y menor en base y punta. Al finalizar cada actualización se fuerza updateMatrixWorld() para asegurar que la deformación se aplique correctamente. Luego busca el grupo de plumas y crea otro tween independiente que también avanza una fase sinusoidal de 0 a 2π. Con esa fase se rota únicamente las plumas verticales, generando un bamboleo constante. 
 Esta versión requiere iniciar un tween al disparar la flecha, para cuando la flecha impacte se debe decir a los Tween de arrowBone y feather que paren con .stop(). Además de realizar ciertos cambios en stickArrow() y animateLoop() para funcionar, realiza los mismo pasos descritos con anterioridad pero usando otras funciones y variables propias de TWEEN.
 
@@ -120,6 +130,9 @@ En cambio la de **senos** no usa fases de 0 a 2π, aquí el valor depende direct
 
 
 ## Galería
+![Gif de la Tierra](https://raw.githubusercontent.com/Yaivi/IG-Tween_Ammo/main/IG_TWEEN_ANIM.gif.gif)
+
+**VÍDEO DE DEMOSTRACIÓN**: https://drive.google.com/file/d/1k9AuZib7z2JSTirzYdX7D10h7x2YYG-b/view?usp=sharing
 
 ## Bibliografía
 * **Manual de Usuario de Bullet de Ammo.js**: https://github.com/kripken/ammo.js/blob/main/bullet/Bullet_User_Manual.pdf
