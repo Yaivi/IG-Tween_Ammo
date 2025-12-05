@@ -118,7 +118,9 @@ Como se puede ver por los comentarios del código de la función, esta desactiva
 
 ## Animación
 Para la animación se han creado 2 formas de realizar el mismo movimiento, uno usando TWEENS y otro a través de senos,  curva ndo la flecha, simulando como ocurre con estas al ser lanzadas en la vida real (vídeo de ejemplo). En ambos casos el movimiento es el mismo un bamboleo del palo, que se acentua en el centro de este, y el movimiento de las plumas de la flecha.
+
 ![Animación de la flecha](https://raw.githubusercontent.com/Yaivi/IG-Tween_Ammo/main/IG_TWEEN_ANIM.gif)
+
 Para la versión de **TWEENS**, primero localiza el SkinnedMesh y prepara un estado interno que representa una fase que avanza de 0 a 2π cada 2 segundos. Este estado se anima mediante un tween infinito y, en cada actualización, se usa esa fase para mover los huesos de la flecha, causando la flexión que es mayor en los centrales y menor en base y punta. Al finalizar cada actualización se fuerza updateMatrixWorld() para asegurar que la deformación se aplique correctamente. Luego busca el grupo de plumas y crea otro tween independiente que también avanza una fase sinusoidal de 0 a 2π. Con esa fase se rota únicamente las plumas verticales, generando un bamboleo constante. 
 Esta versión requiere iniciar un tween al disparar la flecha, para cuando la flecha impacte se debe decir a los Tween de arrowBone y feather que paren con .stop(). Además de realizar ciertos cambios en stickArrow() y animateLoop() para funcionar, realiza los mismo pasos descritos con anterioridad pero usando otras funciones y variables propias de TWEEN.
 
