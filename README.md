@@ -43,7 +43,7 @@ physicsWorld.addRigidBody(body, arrowGroup, stuckGroup);
 Estos objetos se han creado para practicar los tiros, están formado por 3 cilindros que hacen de la base de la diana, cada uno rotada 120º. Encima de los cilindros se ha colocado otro cilindro, que ha sido rotado 90º en el eje X para estar en erguido, se le ha añadido una textura de diana para añadirle detalle. Para que cumpla su función se le ha añadido un rigidBody con su forma para poder dispararle y que se le claven las flechas.
 
 ### Muro
-Otro objeto con física al que disparar las flechas, se le ha puesto una textura para mayor detalle y se le ha puesto
+Otro objeto con física al que disparar las flechas, se le ha puesto una textura para mayor detalle y se le ha añadido una caja de colisión para que también reaccione a las flechas.
 
 ## Físicas
 Dentro del mundo de la escena la flecha está sujeta a una gravedad, definida con physicsWorld.setGravity(new Ammo.btVector3(0, -9.8, 0)) que hace que su altura baje, causando una trayectoria parabólica hasta acabar en el suelo. Al disparar la flecha se le aplica una velocidad inicial en dirección a donde se haga click en la cámara. 
